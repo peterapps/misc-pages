@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Load plotly.js into the DOM -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      #inputsDiv {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      #inputsDiv > div {
+        margin-bottom: 10px;
+      }
+      #inputsDiv input {
+        margin-left: 10px;
+      }
+      #plotlyDiv {
+        width: 100%;
+        min-height: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="inputsDiv">
+      <div>
+        <span>Title</span><input type="text" id="map-title" value="My Map" />
+      </div>
+    </div>
+    <div id="plotlyDiv">
+      <!-- Plotly chart will be drawn inside this DIV -->
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
